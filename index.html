@@ -50,27 +50,27 @@
             <!-- <nav>
                 <div class="row">
                     <div class="nav-header-white">
-                        <a href="index.html">
+                     href="index.html">
                             <span class="logo">
                                 <span>F</span>rank
                             </span>
-                        </a>
+                        
                     </div>
                     <ul class="main-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="#">Project</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li href="#">Home</li>
+                        <li href="#">About</li>
+                        <li href="#">Resume</li>
+                        <li href="#">Project</li>
+                        <li href="#">Contact</li>
                     </ul>
                 </div>
             </nav> -->
             <div class="nav-header-white">
-                <a>
-                    <span class="logo">
-                        <span>F</span>rank
-                    </span>
-                </a>
+
+                <span class="logo">
+                    <span>F</span>rank
+                </span>
+
             </div>
             <div class="header-content" id="home">
                 <h1>I am Frank Liu<br />
@@ -84,11 +84,11 @@
                 <div class="toggle" onclick="menuToggle()"></div>
                 <div class="menu-overlay">
                     <ul>
-                        <li><a href="#home" data-bigletter="H">Home</a></li>
-                        <li><a href="#introduction" data-bigletter="I">Introduction</a></li>
-                        <li><a href="#skill" data-bigletter="S">Skill</a></li>
-                        <li><a href="#project" data-bigletter="P">Projects</a></li>
-                        <li><a href="#contact" data-bigletter="C">Contact</a></li>
+                        <li data-bigletter="H"><a href="#home">Home</a></li>
+                        <li data-bigletter="I"><a href="#introduction"> Introduction</a></li>
+                        <li data-bigletter="S"><a href="#skill">Skill</a></li>
+                        <li data-bigletter="P"><a href="#project">Projects</a></li>
+                        <li data-bigletter="C"><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div> <!-- menu ends -->
@@ -120,35 +120,36 @@
                     </h2>
 
                     <ul class="project-filter">
-                        <li><a class="active" href="" title="All">All</a></li>
-                        <li><a href="" title="React">React</a></li>
-                        <li><a href="" title="JavaScript/jQuery">JavaScript/jQuery</a></li>
-                        <li><a href="" title="Html/Css">Html/Css</a></li>
+                        <li class="list" data-filter="all">All</li>
+                        <li class="list" data-filter="React">React</li>
+                        <li class="list" data-filter="Node">Node/Express</li>
+                        <li class="list" data-filter="JavaScript">JavaScript/jQuery</li>
+                        <li class="list" data-filter="Django">Django</li>
                     </ul>
                 </div>
 
                 <div class="group clearfix">
-                    <div class="col">
-                        <img src="resources/img/work-1.jpg" alt="work-1">
+                    <div class="itemBox col Node JavaScript">
+                        <img src="resources/img/projects/explore-bloor.png" alt="work-1">
                     </div>
-                    <div class="col">
-                        <img src="resources/img/work-5.jpg" alt="work-5">
-                    </div>
-                </div>
-                <div class="group clearfix">
-                    <div class="col">
-                        <img src="resources/img/work-3.jpg" alt="work-3">
-                    </div>
-                    <div class="col">
-                        <img src="resources/img/work-4.jpg" alt="work-4">
+                    <div class="itemBox col JavaScript">
+                        <img src="resources/img/projects/slot-machine2.png" alt="work-5">
                     </div>
                 </div>
                 <div class="group clearfix">
-                    <div class="col">
-                        <img src="resources/img/work-2.jpg" alt="work-2">
+                    <div class="itemBox col JavaScript">
+                        <img src="resources/img/projects/pi-dice-game.png" alt="work-3">
                     </div>
-                    <div class="col">
-                        <img src="resources/img/work-6.jpg" alt="work-6">
+                    <div class="itemBox col Django">
+                        <img src="resources/img/projects/count-me-in.jpg" alt="work-4">
+                    </div>
+                </div>
+                <div class="group clearfix">
+                    <div class="itemBox col JavaScript">
+                        <img src="resources/img/projects/complete-food.png" alt="work-2">
+                    </div>
+                    <div class="itemBox col React">
+                        <img src="resources/img/projects/mastermind.png" alt="work-6">
                     </div>
                 </div>
             </div>
@@ -201,7 +202,7 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <label for="message">Leave me a message</label>
+                                <label for="message">Leave mmessage</label>
                             </div>
                             <div class="col">
                                 <textarea name="message" id="message" cols="30" rows="10"
@@ -261,8 +262,8 @@
 
 <!-- 
 Random facts
-I drink a lot of coffee
+I drinlot of coffee
 I love interior design
 I love to cook (and eat)
-I'm a bit of a clean freak
+I'bit oclean freak
 -->

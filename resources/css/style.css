@@ -435,8 +435,6 @@ F .triangle {
     border-top   : 100px solid transparent;
 }
 
-.section-introduction {}
-
 /*-----------------------   Project Section    -----------------------*/
 
 .project-filter {
@@ -459,6 +457,7 @@ F .triangle {
     font-size      : 40%;
     text-transform : uppercase;
     letter-spacing : 5px;
+    cursor         : pointer;
 }
 
 .group {
