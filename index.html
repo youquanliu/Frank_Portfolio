@@ -7,6 +7,11 @@
     <meta name="description" content="Youquan Liu or Frank's portfolio website, know me from here!">
 
     <title>Frank's portfolio</title>
+
+    <!-- One Page Scroll-->
+    <!-- <link rel="stylesheet" type="text/css" href="vendors/js/onepage-scroll-master/onepage-scroll.css"> -->
+    <!-- <script src="vendors/js/onepage-scroll-master/jquery.onepage-scroll.js"></script> -->
+
     <!--css sheet-->
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <!--Google Font-->
@@ -25,22 +30,82 @@
 </head>
 
 <body>
-    <header>
-        <div class="fullscreen-bg">
-            <video autoplay muted loop poster="resources/img/forest_poster" id="myVideo">
-                <source src="resources/img/Forest.webm" type="video/webm">
-                <source src="resources/img/Forest.mp4" type="video/mp4">
-            </video>
+    <!-- preload start -->
+    <div id="pageLoader">
+        <div class="pageLoaderInner">
+            <div class="loaderLogoName"><img src="assets/logoWhite.svg" alt="Logo" /></div>
+            <h6 class="alttitle">Loading</h6>
         </div>
-        <nav>
-            <div class="nav-header">
+    </div>
+    <!-- preload ends -->
+    <div class="main">
+        <header>
+            <div class="fullscreen-bg">
+                <video autoplay muted loop poster="resources/img/forest_poster.png" id="myVideo">
+                    <source src="resources/img/Forest.webm" type="video/webm">
+                    <source src="resources/img/Forest.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- <nav>
+                <div class="row">
+                    <div class="nav-header-white">
+                        <a href="index.html">
+                            <span class="logo">
+                                <span>F</span>rank
+                            </span>
+                        </a>
+                    </div>
+                    <ul class="main-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Project</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav> -->
+            <div class="nav-header-white">
                 <a href="index.html">
                     <span class="logo">
                         <span>F</span>rank
                     </span>
                 </a>
             </div>
+            <div class="header-content" id="home">
+                <h1>I am Frank Liu<br />
+                    <span class="typer" id="main" data-words="Front End Developer,JavaScript Developer,Web Developer"
+                        data-delay="100" data-deleteDelay="700" data-colors="#BC4639"></span>
+                    <span class="cursor" data-owner="main"></span>
+                </h1>
+            </div>
+
+            <div class="menu rightFloat clearfix">
+                <a href="#" class="openNav"><span></span></a>
+                <nav>
+                    <div class="navInner">
+                        <ul>
+                            <li><a href="#home" data-bigletter="H">Home</a></li>
+                            <li><a href="#introduction" data-bigletter="I">Introduction</a></li>
+                            <li><a href="#skill" data-bigletter="S">Skill</a></li>
+                            <li><a href="#project" data-bigletter="P">Projects</a></li>
+                            <li><a href="#contact" data-bigletter="C">Contact</a></li>
+                        </ul>
+                    </div> <!-- nav Inner ends -->
+
+                    <div class="navBg"></div>
+                </nav>
+            </div> <!-- menu ends -->
+        </header>
+        <!-- <nav class="ready_to_stick">
             <div class="row">
+                <div class="nav-header-black">
+                    <a href="index.html">
+                        <span class="logo">
+                            <span>F</span>rank
+                        </span>
+                    </a>
+                </div>
                 <ul class="main-nav">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -49,158 +114,181 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-        </nav>
-        <div class="header-content">
-            <h1>I am Frank Liu<br />
-                <span class="typer" id="main" data-words="Front End Developer,JavaScript Developer,Web Developer"
-                    data-delay="100" data-deleteDelay="700" data-colors="#BC4639"></span>
-                <span class="cursor" data-owner="main"></span>
-            </h1>
-        </div>
+        </nav> -->
+        <!-- Section Introduction start -->
 
-    </header>
-    <!-- Section Introduction start -->
-
-    <section class="section-introduction clearfix">
-        <div class="row">
-            <div class="section-title">
-                <h2 data-bigletter="About Me">
-                    <strong>introduction</strong>
-                </h2>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Project start -->
-    <section class="section-project">
-        <div class="row">
-            <!-- <div class="triangle"></div> -->
-            <div class="section-title">
-                <h2 data-bigletter="Projects Details">
-                    <strong>My Projects</strong>
-                </h2>
-
-                <ul class="project-filter">
-                    <li><a class="active" href="" title="All">All</a></li>
-                    <li><a href="" title="React">React</a></li>
-                    <li><a href="" title="JavaScript/jQuery">JavaScript/jQuery</a></li>
-                    <li><a href="" title="Html/Css">Html/Css</a></li>
-                </ul>
-            </div>
-
-            <div class="group clearfix">
-                <div class="col">
-                    <img src="resources/img/work-1.jpg" alt="work-1">
-                </div>
-                <div class="col">
-                    <img src="resources/img/work-5.jpg" alt="work-5">
-                </div>
-            </div>
-            <div class="group clearfix">
-                <div class="col">
-                    <img src="resources/img/work-3.jpg" alt="work-3">
-                </div>
-                <div class="col">
-                    <img src="resources/img/work-4.jpg" alt="work-4">
-                </div>
-            </div>
-            <div class="group clearfix">
-                <div class="col">
-                    <img src="resources/img/work-2.jpg" alt="work-2">
-                </div>
-                <div class="col">
-                    <img src="resources/img/work-6.jpg" alt="work-6">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Contact start -->
-
-    <section class="section-contact">
-        <div class="overlay"></div>
-
-        <div class="wrapper">
-
+        <section class="section-introduction js--section-introduction clearfix" id="introduction">
             <div class="row">
-
                 <div class="section-title">
-                    <h2 data-bigletter="Contact Me">
-                        <strong>Contact</strong>
+                    <h2 data-bigletter="About Me">
+                        <strong>introduction</strong>
                     </h2>
                 </div>
-
-                <form action="#" method="post" class="contact-form clearfix">
-                    <div class="row">
-                        <div class="col">
-                            <label for="name">Name</label>
-                        </div>
-                        <div class="col">
-                            <input type="text" name="name" id="name" placeholder="Your name" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="col">
-                            <input type="email" name="email" id="email" placeholder="Your email" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <label for="find-me">How did you find me?</label>
-                        </div>
-                        <div class="col">
-                            <select name="find-me" id="find-me">
-                                <option value="friends" selected>Friends</option>
-                                <option value="search">Search Engine</option>
-                                <option value="ad">Advertisment</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <label for="message">Leave me a message</label>
-                        </div>
-                        <div class="col">
-                            <textarea name="message" id="message" cols="30" rows="10"
-                                placeholder="Your message"></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <label>&nbsp;</label>
-                        </div>
-                        <div class="col">
-                            <input type="submit" value="Send it">
-                        </div>
-                    </div>
-                </form>
             </div>
-        </div>
+        </section>
 
-        <footer>
+
+        <!-- Section Skill start -->
+        <section class="section-skill" id="skill">
+        </section>
+
+
+        <!-- Section Project start -->
+        <section class="section-project" id="project">
             <div class="row">
-                <div class="copyright-box">
-                    <p class="copyright">© Copyright <strong>Frank</strong>. All Rights Reserved</p>
+                <!-- <div class="triangle"></div> -->
+                <div class="section-title">
+                    <h2 data-bigletter="Projects Details">
+                        <strong>My Projects</strong>
+                    </h2>
+
+                    <ul class="project-filter">
+                        <li><a class="active" href="" title="All">All</a></li>
+                        <li><a href="" title="React">React</a></li>
+                        <li><a href="" title="JavaScript/jQuery">JavaScript/jQuery</a></li>
+                        <li><a href="" title="Html/Css">Html/Css</a></li>
+                    </ul>
+                </div>
+
+                <div class="group clearfix">
+                    <div class="col">
+                        <img src="resources/img/work-1.jpg" alt="work-1">
+                    </div>
+                    <div class="col">
+                        <img src="resources/img/work-5.jpg" alt="work-5">
+                    </div>
+                </div>
+                <div class="group clearfix">
+                    <div class="col">
+                        <img src="resources/img/work-3.jpg" alt="work-3">
+                    </div>
+                    <div class="col">
+                        <img src="resources/img/work-4.jpg" alt="work-4">
+                    </div>
+                </div>
+                <div class="group clearfix">
+                    <div class="col">
+                        <img src="resources/img/work-2.jpg" alt="work-2">
+                    </div>
+                    <div class="col">
+                        <img src="resources/img/work-6.jpg" alt="work-6">
+                    </div>
                 </div>
             </div>
-        </footer>
-    </section>
+        </section>
 
+        <!-- Section Contact start -->
+
+        <section class="section-contact footer" id="contact">
+            <div class="overlay"></div>
+
+            <div class="wrapper">
+
+                <div class="row">
+
+                    <div class="section-title">
+                        <h2 data-bigletter="Contact Me">
+                            <strong>Contact</strong>
+                        </h2>
+                    </div>
+
+                    <form action="#" method="post" class="contact-form clearfix">
+                        <div class="row">
+                            <div class="col">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" name="name" id="name" placeholder="Your name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col">
+                                <input type="email" name="email" id="email" placeholder="Your email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="find-me">How did you find me?</label>
+                            </div>
+                            <div class="col">
+                                <select name="find-me" id="find-me">
+                                    <option value="friends" selected>Friends</option>
+                                    <option value="search">Search Engine</option>
+                                    <option value="ad">Advertisment</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="message">Leave me a message</label>
+                            </div>
+                            <div class="col">
+                                <textarea name="message" id="message" cols="30" rows="10"
+                                    placeholder="Your message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col">
+                                <input type="submit" value="Send it">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <footer>
+                <div class="row">
+                    <div class="copyright-box">
+                        <p class="copyright">© Copyright <strong>Frank</strong>. All Rights Reserved</p>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </div>
+    <!--Typer-->
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+
+    <!--Google hosted library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--Enable new functionalities in older browsers for responsive web design-->
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+
+    <!-- way point -->
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+
+
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js'
+        integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script type='text/javascript' src="./vendors/js"></script>
+    <script type='text/javascript' src="./vendors/js/jquery.easing.compatibility.js"></script>
+    <script type='text/javascript' src="./vendors/js/parallax.min.js"></script>
+    <script type='text/javascript' src="./vendors/js/isotope.pkgd.min.js"></script>
+    <script type='text/javascript' src="./vendors/js/jquery.pace.js"></script>
+    <script type='text/javascript' src="./vendors/js/jquery.themepunch.tools.min.js"></script>
+    <script type='text/javascript' src="./vendors/js/jquery.themepunch.revolution.min.js"></script>
+    <script type='text/javascript' src="./vendors/js/jquery.owl.carousel.min.js"></script>
+    <script type='text/javascript' src="./vendors/js/jquery.scroll.min.js"></script>
+    <script type='text/javascript' src="script.js"></script>
 </body>
 
 </html>
 
 <!-- 
 Random facts
-I drink a lot of tea
+I drink a lot of coffee
 I love interior design
 I love to cook (and eat)
 I'm a bit of a clean freak
-I want to live on Pandora
-I worship Jedi Master Yoda
-I'm addicted to Twitter -->
+-->
