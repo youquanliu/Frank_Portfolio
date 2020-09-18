@@ -31,12 +31,12 @@
 
 <body>
     <!-- preload start -->
-    <div id="pageLoader">
+    <!-- <div id="pageLoader">
         <div class="pageLoaderInner">
             <div class="loaderLogoName"><img src="assets/logoWhite.svg" alt="Logo" /></div>
             <h6 class="alttitle">Loading</h6>
         </div>
-    </div>
+    </div> -->
     <!-- preload ends -->
     <div class="main">
         <header>
@@ -66,7 +66,7 @@
                 </div>
             </nav> -->
             <div class="nav-header-white">
-                <a href="index.html">
+                <a>
                     <span class="logo">
                         <span>F</span>rank
                     </span>
@@ -81,20 +81,16 @@
             </div>
 
             <div class="menu rightFloat clearfix">
-                <a href="#" class="openNav"><span></span></a>
-                <nav>
-                    <div class="navInner">
-                        <ul>
-                            <li><a href="#home" data-bigletter="H">Home</a></li>
-                            <li><a href="#introduction" data-bigletter="I">Introduction</a></li>
-                            <li><a href="#skill" data-bigletter="S">Skill</a></li>
-                            <li><a href="#project" data-bigletter="P">Projects</a></li>
-                            <li><a href="#contact" data-bigletter="C">Contact</a></li>
-                        </ul>
-                    </div> <!-- nav Inner ends -->
-
-                    <div class="navBg"></div>
-                </nav>
+                <div class="toggle" onclick="menuToggle()"></div>
+                <div class="menu-overlay">
+                    <ul>
+                        <li><a href="#home" data-bigletter="H">Home</a></li>
+                        <li><a href="#introduction" data-bigletter="I">Introduction</a></li>
+                        <li><a href="#skill" data-bigletter="S">Skill</a></li>
+                        <li><a href="#project" data-bigletter="P">Projects</a></li>
+                        <li><a href="#contact" data-bigletter="C">Contact</a></li>
+                    </ul>
+                </div>
             </div> <!-- menu ends -->
         </header>
         <!-- <nav class="ready_to_stick">
@@ -179,7 +175,7 @@
 
         <!-- Section Contact start -->
 
-        <section class="section-contact footer" id="contact">
+        <section class="section-contact" id="contact">
             <div class="overlay"></div>
 
             <div class="wrapper">
@@ -265,13 +261,14 @@
 
     <!-- way point -->
     <script src="vendors/js/jquery.waypoints.min.js"></script>
-    <script src="resources/js/script.js"></script>
+    <script defer src="./resources/js/script.js"></script>
+    <script defer src="./resources/js/menu.js"></script>
 
 
     <script src='https://code.jquery.com/jquery-3.4.0.min.js'
         integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <script type='text/javascript' src="./vendors/js"></script>
+    <!-- <script type='text/javascript' src="./vendors/js"></script>
     <script type='text/javascript' src="./vendors/js/jquery.easing.compatibility.js"></script>
     <script type='text/javascript' src="./vendors/js/parallax.min.js"></script>
     <script type='text/javascript' src="./vendors/js/isotope.pkgd.min.js"></script>
@@ -279,8 +276,7 @@
     <script type='text/javascript' src="./vendors/js/jquery.themepunch.tools.min.js"></script>
     <script type='text/javascript' src="./vendors/js/jquery.themepunch.revolution.min.js"></script>
     <script type='text/javascript' src="./vendors/js/jquery.owl.carousel.min.js"></script>
-    <script type='text/javascript' src="./vendors/js/jquery.scroll.min.js"></script>
-    <script type='text/javascript' src="script.js"></script>
+    <script type='text/javascript' src="./vendors/js/jquery.scroll.min.js"></script> -->
 </body>
 
 </html>
