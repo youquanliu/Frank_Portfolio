@@ -29,7 +29,6 @@ body {
     font-weight     : 300;
     font-size       : 20px;
     text-rendering  : optimizeLegibility;
-    overflow-x      : hidden;
     font-family     : 'Cormorant Garamond', serif;
 }
 
@@ -435,7 +434,68 @@ F .triangle {
     border-top   : 100px solid transparent;
 }
 
+/*-----------------------   Skill Section    -----------------------*/
+
+
 /*-----------------------   Project Section    -----------------------*/
+
+.section-project {
+    min-height: 90vh;
+}
+
+.project-container {
+    position       : relative;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : row;
+    padding        : 30px 0;
+    flex-wrap      : wrap;
+    transform-style: preserve-3d;
+    width          : 1280px;
+    margin         : 0 auto;
+}
+
+.itemBox {
+    position       : relative;
+    width          : 400px;
+    height         : 300px;
+    margin         : 10px 0;
+    background     : #000;
+    transform-style: preserve-3d;
+}
+
+.itemBox:hover {
+    box-shadow: 0 50px 80px rgba(0, 0, 0, .2);
+}
+
+
+.itemBox img {
+    position  : absolute;
+    top       : 0;
+    left      : 0;
+    width     : 100%;
+    height    : 100%;
+    object-fit: cover;
+
+}
+
+.itemBox .contentBx {
+    position        : absolute;
+    top             : 20%;
+    left            : 50px;
+    right           : 50px;
+    background      : #fff;
+    transform       : translateZ(20px) scaleY(0);
+    padding         : 30px 25px 20px 25px;
+    transform-origin: top;
+    transition      : 0.5s;
+    transform-style : preserve-3d;
+}
+
+.project-container .itemBox:hover .contentBx {
+    transform: translateZ(20px) scaleY(1);
+}
 
 .project-filter {
     list-style: none;
@@ -454,53 +514,10 @@ F .triangle {
     text-decoration: none;
     font-family    : 'Montserrat', sans-serif;
     color          : #3AAFA9;
-    font-size      : 40%;
+    font-size      : 30%;
     text-transform : uppercase;
     letter-spacing : 5px;
     cursor         : pointer;
-}
-
-.group {
-    margin: 0 20%;
-    width : auto;
-}
-
-.col {
-    display: block;
-    float  : left;
-    width  : 100%;
-    margin : 0;
-}
-
-.group .col {
-    background-color: #000;
-}
-
-.col:first-child {
-    margin-left: 0;
-    width      : 49.2%;
-    overflow   : hidden;
-}
-
-.col:last-of-type {
-    width   : 49.2%;
-    overflow: hidden;
-}
-
-.col img {
-    overflow  : hidden;
-    height    : 100%;
-    width     : 100%;
-    opacity   : 0.7;
-    transform : scale(1.15);
-    transition: opacity 0.5s, transform 0.5s;
-
-}
-
-.col img:hover {
-    opacity  : 1;
-    transform: scale(1.03);
-
 }
 
 /*-----------------------   Contact Section    -----------------------*/
