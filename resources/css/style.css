@@ -13,6 +13,7 @@ font-family: 'Montserrat', sans-serif;      BODY
     margin    : 0;
     padding   : 0;
     box-sizing: border-box;
+
 }
 
 *,
@@ -30,6 +31,12 @@ body {
     font-size       : 20px;
     text-rendering  : optimizeLegibility;
     font-family     : 'Cormorant Garamond', serif;
+    max-width       : 100%;
+}
+
+body {
+    overflow-x: hidden;
+
 }
 
 /*-----------------------    Reusable Component    -----------------------*/
@@ -458,11 +465,13 @@ F .triangle {
 
 .itemBox {
     position       : relative;
-    width          : 400px;
+    width          : 30%;
     height         : 300px;
-    margin         : 10px 0;
+    margin         : 10px;
     background     : #000;
     transform-style: preserve-3d;
+    overflow-y     : hidden;
+    transform      : perspective(1000px)
 }
 
 .itemBox:hover {
@@ -482,7 +491,7 @@ F .triangle {
 
 .itemBox .contentBx {
     position        : absolute;
-    top             : 20%;
+    top             : 10%;
     left            : 50px;
     right           : 50px;
     background      : #fff;
@@ -491,10 +500,11 @@ F .triangle {
     transform-origin: top;
     transition      : 0.5s;
     transform-style : preserve-3d;
+    opacity         : .9;
 }
 
 .project-container .itemBox:hover .contentBx {
-    transform: translateZ(20px) scaleY(1);
+    transform: translateZ(50px) scaleY(1);
 }
 
 .project-filter {
