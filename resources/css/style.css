@@ -36,12 +36,11 @@ body {
 
 body {
     overflow-x: hidden;
-
 }
 
 /*-----------------------    Reusable Component    -----------------------*/
 
-row {
+.row {
     margin   : 0 auto;
     max-width: 1140px;
     overflow : hidden;
@@ -378,6 +377,7 @@ header {
     overflow-y     : auto;
     transform      : scale(0);
     transition     : 0.5s;
+    overflow: hidden;
 }
 
 .menu-active {
@@ -396,7 +396,56 @@ header {
     display   : block;
 }
 
-.menu-overlay ul li a {
+ul li a {
+    color          : #333;
+    text-decoration: none;
+    font-size      : 3em;
+    padding        : 5px 20px;
+    display        : inline-flex;
+    font-weight    : 700;
+    transition     : 0.5s;
+}
+
+ul:hover li a {
+    color: #333;
+}
+
+ul li:hover a {
+    color     : #000;
+    background: rgba(255, 255, 255, 1);
+}
+
+ul li a:before {
+    content        : '';
+    position       : absolute;
+    top            : 50%;
+    left           : 40%;
+    transform      : translate(-50%, -50%);
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    font-size      : 5em;
+    color          : rgba(0, 0, 0, .1);
+    border-radius  : 50%;
+    z-index        : -1;
+    opacity        : 0;
+    font-weight    : 900;
+    text-transform : uppercase;
+    letter-spacing : 500px;
+    transition     : letter-spacing 0.5s, left 0.5s;
+}
+
+ul li a:hover:before {
+    content       : attr(data-text);
+    opacity       : 1;
+    left          : 50%;
+    letter-spacing: 10px;
+    width         : 6em;
+    height        : 1800px;
+}
+
+
+/* .menu-overlay ul li a {
     position       : relative;
     text-decoration: none;
     font-size      : 300%;
@@ -405,9 +454,9 @@ header {
     color          : #FFF;
     font-weight    : 700;
     display        : inline-block;
-}
+} */
 
-.menu-overlay ul li a:before {
+/* .menu-overlay ul li a:before {
     content         : '';
     position        : absolute;
     top             : 90%;
@@ -428,8 +477,7 @@ header {
     transform-origin: left;
     transition      : 0.5s transform;
     z-index         : 11;
-
-}
+} */
 
 /*-----------------------   Introduction Section    -----------------------*/
 F .triangle {
@@ -467,10 +515,9 @@ F .triangle {
     position       : relative;
     width          : 30%;
     height         : 300px;
-    margin         : 10px;
+    margin         : 0 10px 20px 10px;
     background     : #000;
     transform-style: preserve-3d;
-    overflow-y     : hidden;
     transform      : perspective(1000px)
 }
 
@@ -491,7 +538,7 @@ F .triangle {
 
 .itemBox .contentBx {
     position        : absolute;
-    top             : 10%;
+    top             : 20%;
     left            : 50px;
     right           : 50px;
     background      : #fff;
