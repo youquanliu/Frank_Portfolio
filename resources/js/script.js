@@ -5,11 +5,6 @@
 
 $(document).ready(function () {
 
-
-    $(".logo").on('click', function () {
-        alert('eeeeeeeeeee');
-    })
-
     // PROJECTS SECTION FILTER
     $('.itemBox').on('click', function () {
         $(this).toggleClass('show-description');
