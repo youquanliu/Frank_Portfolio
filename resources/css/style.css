@@ -367,19 +367,9 @@ F .triangle {
 /*-----------------------   On The Way Section    -----------------------*/
 .section-onTheWay {
     background: #0a2a43;
-    min-height: 1500px;
+    min-height: 110vh;
     position  : relative;
 }
-
-/* .section-onTheWay:before {
-    content   : '';
-    position  : absolute;
-    bottom    : 0;
-    width     : 100%;
-    height    : 100vh;
-    background: linear-gradient(to top, #def2f1, transparent);
-    z-index   : 10000;
-} */
 
 .parallax-container {
     position       : relative;
@@ -408,8 +398,8 @@ F .triangle {
     left          : 0;
     width         : 100%;
     height        : 100%;
-    background    : #0a2a43;
-    z-index       : 10001;
+    /* background    : #0a2a43; */
+    z-index       : 10000;
     mix-blend-mode: color;
 }
 
