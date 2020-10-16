@@ -13,7 +13,6 @@ font-family: 'Montserrat', sans-serif;      BODY
     margin    : 0;
     padding   : 0;
     box-sizing: border-box;
-
 }
 
 *,
@@ -288,41 +287,6 @@ ul li a:hover:before {
     height        : 1800px;
 }
 
-
-/* .menu-overlay ul li a {
-    position       : relative;
-    text-decoration: none;
-    font-size      : 300%;
-    line-height    : 150%;
-    text-transform : uppercase;
-    color          : #FFF;
-    font-weight    : 700;
-    display        : inline-block;
-} */
-
-/* .menu-overlay ul li a:before {
-    content         : '';
-    position        : absolute;
-    top             : 90%;
-    left            : 0;
-    width           : 100%;
-    height          : 8px;
-    background      : #FFF;
-    border-radius   : 10px;
-    transform       : translateY(-50%) scaleX(0);
-    transform-origin: right;
-    transition      : 0.5s transform;
-    z-index         : 11;
-
-}
-
-.menu-overlay ul li a:hover:before {
-    transform       : translateY(-50%) scaleX(1);
-    transform-origin: left;
-    transition      : 0.5s transform;
-    z-index         : 11;
-} */
-
 /*-----------------------   Introduction Section    -----------------------*/
 F .triangle {
     height       : 0;
@@ -388,10 +352,10 @@ F .triangle {
     display         : block;
     height          : 4px;
     border-radius   : 2px;
-    background-color: #3aafa9;
+    background-color: #305553;
     width           : 7rem;
     margin          : 10px auto 0 0;
-    z-index         : 99;
+    z-index         : 1;
 }
 
 .bio-container p {
@@ -404,16 +368,27 @@ F .triangle {
 .section-onTheWay {
     background: #0a2a43;
     min-height: 1500px;
+    position  : relative;
 }
+
+/* .section-onTheWay:before {
+    content   : '';
+    position  : absolute;
+    bottom    : 0;
+    width     : 100%;
+    height    : 100vh;
+    background: linear-gradient(to top, #def2f1, transparent);
+    z-index   : 10000;
+} */
 
 .parallax-container {
     position       : relative;
     width          : 100%;
     height         : 100vh;
+    overflow       : hidden;
     display        : flex;
     justify-content: center;
     align-items    : center;
-    overflow       : hidden;
 }
 
 .parallax-container:before {
@@ -434,7 +409,7 @@ F .triangle {
     width         : 100%;
     height        : 100%;
     background    : #0a2a43;
-    z-index       : 10000;
+    z-index       : 10001;
     mix-blend-mode: color;
 }
 
@@ -457,7 +432,7 @@ F .triangle {
 }
 
 #road {
-    z-index: 1;
+    z-index: 200;
 }
 
 /*-----------------------   Skill Section    -----------------------*/
