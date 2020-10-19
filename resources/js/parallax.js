@@ -6,7 +6,6 @@ let text = document.getElementById('parallax-text');
 
 const sec = document.querySelector('.section-onTheWay');
 
-
 window.addEventListener('scroll', function () {
 
     var value = window.scrollY - sec.offsetTop;
