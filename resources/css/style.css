@@ -331,7 +331,7 @@ F .triangle {
 
 .img-container img {
     opacity   : .7;
-    width: 100%;
+    width     : 100%;
     max-height: 100%;
     object-fit: cover;
 }
@@ -473,8 +473,9 @@ F .triangle {
 .itemBox .contentBx {
     position        : absolute;
     top             : 20%;
-    left            : 50px;
-    right           : 50px;
+    left            : 10%;
+    right           : 10%;
+    height          : 70%;
     background      : #fff;
     transform       : translateZ(20px) scaleY(0);
     padding         : 30px 25px 20px 25px;
@@ -484,8 +485,78 @@ F .triangle {
     opacity         : .9;
 }
 
+.itemBox .contentBx h4 {
+    font-size    : 120%;
+    margin-bottom: 10px;
+}
+
 .project-container .itemBox:hover .contentBx {
     transform: translateZ(50px) scaleY(1);
+}
+
+.button-container {
+    position      : relative;
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+}
+
+.button-container a {
+    position       : relative;
+    width          : 45%;
+    height         : 25px;
+    text-align     : center;
+    line-height    : 20px;
+    margin         : 1rem;
+    text-transform : uppercase;
+    background     : #bd2c00;
+    color          : #FFF;
+    font-size      : 100%;
+    font-weight    : 500;
+    text-decoration: none;
+    letter-spacing : 2px;
+    overflow       : hidden;
+    padding-top    : 10px;
+}
+
+.button-container a span {
+    position       : relative;
+    display        : inline-block;
+    width          : 100%;
+    height         : 100%;
+    z-index        : 10000;
+    transition     : 0s ease-in;
+    justify-content: center;
+}
+
+.button-container a:hover span {
+    transition: 0.4s ease-in;
+    transform : translateY(-110%);
+}
+
+.button-container a:before {
+    content      : '';
+    position     : absolute;
+    bottom       : -50px;
+    left         : 50%;
+    transform    : translateX(-50%);
+    width        : 100px;
+    height       : 110px;
+    background   : #333;
+    border-radius: 50%;
+    transition   : 0.4s ease-in;
+}
+
+.button-container a:hover:before {
+    bottom: -200px
+}
+
+.button-container a:nth-child(2):before {
+    bottom: 40px;
+}
+
+.button-container a:nth-child(2):hover:before {
+    bottom: -40px;
 }
 
 .project-filter {
