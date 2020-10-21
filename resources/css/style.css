@@ -298,8 +298,8 @@ F .triangle {
 }
 
 .section-introduction {
-    height    : 100vh;
-    margin-top: 100px;
+    height: 100vh;
+    margin: 100px auto;
 }
 
 .section-introduction .wrapper {
@@ -364,11 +364,97 @@ F .triangle {
     color     : #222;
 }
 
+/*-----------------------   Techs Section    -----------------------*/
+.section-techs {
+    position       : relative;
+    margin         : 0 auto;
+    width          : 80%;
+    height         : 90vh;
+    overflow       : hidden;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.section-techs h2 {
+    position : relative;
+    color    : #FFF;
+    font-size: 8em;
+    z-index  : 10000;
+}
+
+.section-techs img {
+    width     : 12%;
+    height    : auto;
+    object-fit: cover;
+    position  : absolute;
+}
+
+#hc {
+    top  : 5%;
+    right: 10%;
+}
+
+#bootstrap {
+    top  : 17%;
+    right: 22%;
+}
+
+#django {
+    top  : 80%;
+    right: 5%;
+}
+
+#express {
+    top  : 74%;
+    right: 32%;
+    width: 20%;
+}
+
+#javascript {
+    top  : 82%;
+    right: 12%;
+}
+
+#jquery {
+    top : 70%;
+    left: 4%;
+}
+
+#mongodb {
+    top : 15%;
+    left: 24%;
+}
+
+#node {
+    top : 34%;
+    left: 14%;
+}
+
+#mysql {
+    top  : 4%;
+    left : 2%;
+    width: 8%;
+
+}
+
+#react {
+    top  : 15%;
+    width: 15%;
+}
+
+#python {
+    top  : 56%;
+    left : 30%;
+    width: 8%;
+}
+
 /*-----------------------   On The Way Section    -----------------------*/
 .section-onTheWay {
     background: #0a2a43;
     min-height: 110vh;
     position  : relative;
+    margin-top: 100px;
 }
 
 .parallax-container {
@@ -424,9 +510,6 @@ F .triangle {
 #road {
     z-index: 200;
 }
-
-/*-----------------------   Skill Section    -----------------------*/
-
 
 /*-----------------------   Project Section    -----------------------*/
 
