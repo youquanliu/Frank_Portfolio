@@ -71,11 +71,10 @@ section {
 }
 
 .section-title {
-    display      : block;
-    font-size    : 180%;
-    font-weight  : bold;
-    text-align   : center;
-    margin-bottom: 40px;
+    display    : block;
+    font-size  : 180%;
+    font-weight: bold;
+    text-align : center;
 }
 
 h2 :after {
@@ -305,6 +304,7 @@ F .triangle {
 .section-introduction .wrapper {
     padding   : 0;
     width     : 70%;
+    margin-top: 30px;
     box-shadow: 0px 10px 17px 2px rgba(0, 0, 0, .4);
     opacity   : 1;
 }
@@ -374,13 +374,15 @@ F .triangle {
     display        : flex;
     justify-content: center;
     align-items    : center;
+    background     : #FFF;
 }
 
 .section-techs h2 {
-    position : relative;
-    color    : #FFF;
-    font-size: 8em;
-    z-index  : 10000;
+    position   : relative;
+    color      : #305553;
+    font-size  : 8em;
+    z-index    : 10000;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .section-techs img {
@@ -396,7 +398,7 @@ F .triangle {
 }
 
 #bootstrap {
-    top  : 17%;
+    top  : 23%;
     right: 22%;
 }
 
@@ -406,9 +408,9 @@ F .triangle {
 }
 
 #express {
-    top  : 74%;
+    top  : 79%;
     right: 32%;
-    width: 20%;
+    width: 25%;
 }
 
 #javascript {
@@ -422,30 +424,30 @@ F .triangle {
 }
 
 #mongodb {
-    top : 15%;
+    top : 35%;
     left: 24%;
 }
 
 #node {
-    top : 34%;
-    left: 14%;
+    top  : 56%;
+    left : 30%;
+    width: 20%;
 }
 
 #mysql {
-    top  : 4%;
+    top  : 14%;
     left : 2%;
     width: 8%;
-
 }
 
 #react {
-    top  : 15%;
+    top  : 27%;
     width: 15%;
 }
 
 #python {
-    top  : 56%;
-    left : 30%;
+    top  : 34%;
+    left : 14%;
     width: 8%;
 }
 
@@ -454,7 +456,7 @@ F .triangle {
     background: #0a2a43;
     min-height: 110vh;
     position  : relative;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .parallax-container {
@@ -505,6 +507,7 @@ F .triangle {
     font-size  : 10rem;
     font-weight: 700;
     z-index    : 1;
+    font-family: 'Roboto Mono', monospace;
 }
 
 #road {
@@ -646,12 +649,21 @@ F .triangle {
     list-style: none;
     margin-top: 10px;
     text-align: center;
+    cursor    : pointer;
+    margin-top: 20px;
 }
 
 .project-filter li {
-    padding: 0 20px 10px 0;
-    margin : 0;
-    display: inline-block;
+    padding      : 0 20px 10px 0;
+    margin       : 0;
+    display      : inline-block;
+    border-bottom: 2px solid transparent;
+    transition   : border-bottom 0.2s;
+}
+
+.project-filter li:hover {
+    border-bottom : 3px solid #3AAFA9;
+    padding-bottom: 5px;
 }
 
 .project-filter li a {
