@@ -748,11 +748,8 @@ textarea {
     height: 5rem;
 }
 
-input[type=checkbox] {
-    margin: 10px 5px 10px 0;
-}
 
-input[type=submit] {
+.section-contact button {
     display         : inline-block;
     padding         : 10px 30px;
     font-weight     : 300;
@@ -765,8 +762,8 @@ input[type=submit] {
     transition      : background-color 0.2s, border 0.2s, color 0.2s;
 }
 
-input[type=submit]:hover,
-input[type=submit]:active {
+.section-contact button:hover,
+.section-contact button:active {
     background-color: #BC4639;
     border          : 1px solid #BC4639;
     cursor          : pointer;
