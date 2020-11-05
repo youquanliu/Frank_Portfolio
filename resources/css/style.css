@@ -563,7 +563,7 @@ F .triangle {
     right           : 10%;
     height          : 70%;
     background      : #fff;
-    transform       : translateZ(20px) scaleY(0);
+    /* transform       : translateZ(20px) scaleY(0); */
     padding         : 30px 25px 20px 25px;
     transform-origin: top;
     transition      : 0.5s;

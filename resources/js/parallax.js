@@ -1,5 +1,5 @@
 
-//on the way section parallax
+//On the way section parallax
 let bg = document.getElementById('bg');
 let moon = document.getElementById('moon');
 let mountain = document.getElementById('mountain');
@@ -19,8 +19,8 @@ window.addEventListener('scroll', function () {
     text.style.top = value * 0.5 + 'px';
 })
 
-//techs section parallax
-document.addEventListener("mousemove", parallax);
+//Techs section parallax
+document.querySelector('.section-techs').addEventListener("mousemove", parallax);
 function parallax(e) {
     this.querySelectorAll('.layer').forEach(layer => {
         const speed = layer.getAttribute('data-speed')
