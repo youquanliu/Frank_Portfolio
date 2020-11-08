@@ -1,10 +1,32 @@
-Small devices (landscape phones, 576px and up) @media (max-width: 576px) {}
+/* Small devices (landscape phones, less than 479)  */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
 
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 768px) {
     .header-content {
-        left : 40%;
-        width: 200px;
+        left     : 40%;
+        width    : 100%;
+        min-width: 100%;
+    }
+
+    .header-content h1 {
+        font-size: 20%;
+    }
+}
+
+/* Small devices (landscape phones, less than 767px) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    header {
+        clip-path : polygon(0 0, 100% 0, 100% 83%, 50% 90%, 0 83%);
+        overflow-x: hidden;
+    }
+
+    .header-content {
+        left     : 40%;
+        width    : 100%;
+        min-width: 70%;
+    }
+
+    .header-content h1 {
+        font-size: 250%;
     }
 
     .section-techs img {
@@ -15,19 +37,29 @@ Small devices (landscape phones, 576px and up) @media (max-width: 576px) {}
         font-size  : 4em;
         font-weight: 300;
     }
-}
 
-/* Medium devices (tablets, less than 992px)*/
-@media (max-width: 992px) {
-
-    header {
-        clip-path: polygon(0 0, 100% 0, 100% 83%, 50% 94%, 0 83%);
+    .project-filter li {
+        font-size  : 70%;
+        font-weight: 700;
     }
 
-    .header-content {
-        position : absolute;
-        max-width: 100vw;
-        width    : 200%;
+
+    ul li:hover a {
+        color     : #FFF;
+        background: rgba(76, 175, 80, 0.1);
+    }
+}
+
+/* Medium devices (tablets, less than 991px)*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    header {
+        clip-path : polygon(0 0, 100% 0, 100% 83%, 50% 94%, 0 83%);
+        overflow-x: hidden;
+    }
+
+    html {
+        overflow-x: hidden;
+
     }
 
     ul li a:before {
@@ -39,33 +71,51 @@ Small devices (landscape phones, 576px and up) @media (max-width: 576px) {}
         width : 100vw;
     }
 
+    .section-techs h2 {
+        font-size: 6em;
+    }
+
     .section-techs {
         width: 100vw;
     }
 
     #parallax-text {
-        font-size: 8rem;
+        font-size: 6.5rem;
     }
 
-    #moon {
-        width: 120%;
-    }
-
-    .section-project [data-bigletter]:before {
-        width: 100%;
-        left : -4%;
-    }
-
-    .itemBox .contentBx {
-        padding: 10px 25px 20px 25px;
-    }
-
-    .itemBox .contentBx h4 {
+    .section-project [data-bigletter]:before,
+    .section-contact [data-bigletter]:before {
+        width    : 100%;
+        left     : -4%;
         font-size: 120%;
     }
 
-    .itemBox .contentBx p {
-        font-size: 80%;
+    .section-contact [data-bigletter]:before {
+        top: -10%;
+    }
+
+    .project-container {
+        width: 100%;
+    }
+
+    .itemBox .contentBx {
+        position        : absolute;
+        top             : 20%;
+        left            : 10%;
+        right           : 10%;
+        height          : 70%;
+        background      : #fff;
+        transform       : translateZ(20px) scaleY(0);
+        padding         : 5px 15px 20px 15px;
+        transform-origin: top;
+        transition      : 0.5s;
+        transform-style : preserve-3d;
+        opacity         : .9;
+    }
+
+    .itemBox .contentBx h4 {
+        font-size    : 110%;
+        margin-bottom: 2px;
     }
 
     .button-container a {
@@ -82,15 +132,32 @@ Small devices (landscape phones, 576px and up) @media (max-width: 576px) {}
         width: 17%;
     }
 
+    .section-contact button {
+        width: 20%;
+    }
+
 }
 
 /* Large devices (desktops, less than 1200px) */
-@media (max-width: 1200px),
-screen and (max-height: 626px) {
+@media (min-width: 992px)and (max-width: 1200px) {
+
+    .logo {
+        position: absolute;
+        left    : 10%;
+        top     : 50px;
+    }
+
+    header {
+        overflow-x: hidden;
+    }
+
     .header-content {
-        max-width: 60%;
-        width    : 100%;
-        top      : 40%;
+        position : absolute;
+        max-width: 1140px;
+        width    : 80%;
+        top      : 50%;
+        left     : 50%;
+        transform: translate(-50%, -50%);
     }
 
     .section-introduction .wrapper,
@@ -103,8 +170,33 @@ screen and (max-height: 626px) {
         font-weight: 800;
     }
 
+    #parallax-text {
+        font-size: 8rem;
+    }
+
     .project-container {
         width: 100%;
+    }
+
+    [data-bigletter]:before {
+
+        font-size: 100%;
+        position : absolute;
+        top      : -10%;
+        left     : 10%;
+        right    : 10%;
+    }
+
+    .itemBox .contentBx {
+        padding: 10px 25px 20px 25px;
+    }
+
+    .itemBox .contentBx h4 {
+        font-size: 120%;
+    }
+
+    .itemBox .contentBx p {
+        font-size: 80%;
     }
 
     .section-contact .wrapper {
