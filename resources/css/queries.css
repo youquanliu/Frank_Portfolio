@@ -1,5 +1,9 @@
 /* Small devices (landscape phones, less than 479)  */
 @media only screen and (min-width: 320px) and (max-width: 479px) {
+    header {
+        clip-path : polygon(0 0, 100% 0, 100% 83%, 50% 90%, 0 83%);
+        overflow-x: hidden;
+    }
 
     .header-content {
         left     : 40%;
@@ -10,6 +14,16 @@
     .header-content h1 {
         font-size: 20%;
     }
+
+    ul li a:before {
+        font-size: 2em;
+    }
+
+    ul li:hover a {
+        color     : #FFF;
+        background: rgba(76, 175, 80, 0.01);
+    }
+
 }
 
 /* Small devices (landscape phones, less than 767px) */
@@ -19,18 +33,34 @@
         overflow-x: hidden;
     }
 
+    .logo {
+        position: absolute;
+        left    : 10%;
+        top     : 50px;
+    }
+
     .header-content {
-        left     : 40%;
-        width    : 100%;
-        min-width: 70%;
+        left : 40%;
+        width: 70%;
     }
 
     .header-content h1 {
         font-size: 250%;
     }
 
+    .section-introduction .wrapper {
+        width: 100%;
+    }
+
+    .section-techs {
+        position: relative;
+        margin  : 0 auto;
+        width   : 100%;
+        height  : 60vh;
+    }
+
     .section-techs img {
-        width: 20%;
+        width: 12%;
     }
 
     .section-techs h2 {
@@ -38,16 +68,24 @@
         font-weight: 300;
     }
 
+    #parallax-text {
+        font-size: 6em;
+    }
+
     .project-filter li {
         font-size  : 70%;
         font-weight: 700;
     }
 
+    ul li a:before {
+        font-size: 1em;
+    }
 
     ul li:hover a {
         color     : #FFF;
         background: rgba(76, 175, 80, 0.1);
     }
+
 }
 
 /* Medium devices (tablets, less than 991px)*/
@@ -64,6 +102,11 @@
 
     ul li a:before {
         font-size: 2em;
+    }
+
+    ul li:hover a {
+        color     : #FFF;
+        background: rgba(76, 175, 80, 0.1);
     }
 
     .section-introduction .wrapper {
@@ -158,6 +201,16 @@
         top      : 50%;
         left     : 50%;
         transform: translate(-50%, -50%);
+    }
+
+    ul li a:before {
+        font-size     : 3em;
+        letter-spacing: 5px;
+    }
+
+    ul li:hover a {
+        color     : #FFF;
+        background: rgba(76, 175, 80, 0.1);
     }
 
     .section-introduction .wrapper,
