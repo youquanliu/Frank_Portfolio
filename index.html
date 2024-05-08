@@ -1,363 +1,540 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Youquan Liu or Frank's portfolio website, know me from here!">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Youquan Liu or Frank's portfolio website, know me from here!"
+    />
     <title>Frank's portfolio</title>
     <!--css sheet-->
-    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
     <!--Google Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Roboto+Mono:ital,wght@1,700&display=swap"
-        rel="stylesheet">
-</head>
-<body>
-
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Roboto+Mono:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <div class="fullscreen-bg">
-            <video autoplay muted loop poster="resources/img/forest_poster.png" id="myVideo">
-                <source src="resources/img/Forest.webm" type="video/webm">
-                <source src="resources/img/Forest.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class="nav-header-white">
-            <span class="logo">
-                <span>F</span>rank
-            </span>
-        </div>
-        <div class="header-content" id="home">
-            <h1>I am Frank Liu<br />
-                <span class="typer" id="main"
-                    data-words="Drink lots Coffee,A front-end developer,A bit clean freak,A marathon runner"
-                    data-delay="100" data-deleteDelay="600" data-colors="#BC4639"></span>
-                <span class="cursor" data-owner="main"></span>
-            </h1>
-        </div>
+      <div class="fullscreen-bg">
+        <video
+          autoplay
+          muted
+          loop
+          poster="resources/img/forest_poster.png"
+          id="myVideo"
+        >
+          <source src="resources/img/Forest.webm" type="video/webm" />
+          <source src="resources/img/Forest.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="nav-header-white">
+        <span class="logo"> <span>F</span>rank </span>
+      </div>
+      <div class="header-content" id="home">
+        <h1>
+          I am Frank Liu<br />
+          <span
+            class="typer"
+            id="main"
+            data-words="Drink lots Coffee,A front-end developer,A bit clean freak,A marathon runner"
+            data-delay="100"
+            data-deleteDelay="600"
+            data-colors="#BC4639"
+          ></span>
+          <span class="cursor" data-owner="main"></span>
+        </h1>
+      </div>
 
-        <div class="menu clearfix">
-            <div class="toggle" onclick="menuToggle()"></div>
-            <div class="menu-overlay">
-                <ul>
-                    <li><a href="#home" data-text="Home">Home</a></li>
-                    <li><a href="#introduction" data-text="Introduction"> Introduction</a></li>
-                    <li><a href="#skills" data-text="Skills">Skills</a></li>
-                    <li><a href="#project" data-text="Projects">Projects</a></li>
-                    <li><a href="#contact" data-text="Contact">Contact</a></li>
-                </ul>
-            </div>
-        </div> <!-- menu ends -->
+      <div class="menu clearfix">
+        <div class="toggle" onclick="menuToggle()"></div>
+        <div class="menu-overlay">
+          <ul>
+            <li><a href="#home" data-text="Home">Home</a></li>
+            <li>
+              <a href="#introduction" data-text="Introduction"> Introduction</a>
+            </li>
+            <li><a href="#skills" data-text="Skills">Skills</a></li>
+            <li><a href="#project" data-text="Projects">Projects</a></li>
+            <li><a href="#contact" data-text="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- menu ends -->
     </header>
 
     <section class="section-introduction clearfix" id="introduction">
-            <div class="section-title">
-                <h2 data-bigletter="About Me About">
-                    <strong>introduction</strong>
-                </h2>
-            </div>
-        <div class="wrapper">
-            <div class="flexrow">
-                <div class="img-container">
-                    <img src="./resources/img/intro-bg.png" alt="running image">
-                </div>
+      <div class="section-title">
+        <h2 data-bigletter="About Me About">
+          <strong>introduction</strong>
+        </h2>
+      </div>
+      <div class="wrapper">
+        <div class="flexrow">
+          <div class="img-container">
+            <img src="./resources/img/intro-bg.png" alt="running image" />
+          </div>
 
-                <div class="bio-container">
-                    <h3 class="title-bio">
-                        <span class="bio">Bio</span>
-
-                    </h3>
-                    <p>
-                        Hello/你好/여보세요/Bonjour/नमस्ते
-                        <br /><br />
-                        I am Frank Liu, who thrive on the endless journey of learning and innovation. With a deep passion for web development, I immerse myself in the dynamic world of coding, design, and user experience. Every project is an opportunity to explore new technologies and refine my skills, ensuring that I deliver solutions that exceed expectations.
-                    </p>
-                    <p>
-                        Beyond the code, I'm all about embracing different cultures and celebrating what makes us unique. I believe in creating spaces where everyone feels welcome, respected, and valued. It's in these diverse environments that the best ideas come to life.
-                    </p>
-                    <p>
-                        When I'm not crafting pixel-perfect websites, you can find me hitting the pavement for a refreshing jog or whipping up delicious treats in the kitchen. Jogging and baking  fueling both my body and creativity.
-                    </p>
-                    <p>
-                        Join me on this exciting journey of innovation, collaboration, and cultural appreciation as we shape the web of tomorrow, one line of code at a time.
-
-                    </p>
-                </div>
-            </div>
+          <div class="bio-container">
+            <h3 class="title-bio">
+              <span class="bio">Bio</span>
+            </h3>
+            <p>
+              Hello/你好/여보세요/Bonjour/नमस्ते
+              <br /><br />
+              I am Frank Liu, who thrive on the endless journey of learning and
+              innovation. With a deep passion for web development, I immerse
+              myself in the dynamic world of coding, design, and user
+              experience. Every project is an opportunity to explore new
+              technologies and refine my skills, ensuring that I deliver
+              solutions that exceed expectations.
+            </p>
+            <p>
+              Beyond the code, I'm all about embracing different cultures and
+              celebrating what makes us unique. I believe in creating spaces
+              where everyone feels welcome, respected, and valued. It's in these
+              diverse environments that the best ideas come to life.
+            </p>
+            <p>
+              When I'm not crafting pixel-perfect websites, you can find me
+              hitting the pavement for a refreshing jog or whipping up delicious
+              treats in the kitchen. Jogging and baking fueling both my body and
+              creativity.
+            </p>
+            <p>
+              Join me on this exciting journey of innovation, collaboration, and
+              cultural appreciation as we shape the web of tomorrow, one line of
+              code at a time.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Section techs start -->
     <section class="section-techs">
-        <h2 class="layer">My Skills</h2>
-        <img src="./resources/img/techs/html&css.png" data-speed="-5" class="layer" id="hc" alt="html&css">
-        <img src="./resources/img/techs/bootstrap.png" data-speed="8" class="layer" id="bootstrap" alt="bootstrap">
-        <img src="./resources/img/techs/django.png" data-speed="2" class="layer" id="django" alt="django">
-        <img src="./resources/img/techs/express.png" data-speed="6" class="layer" id="express" alt="express">
-        <img src="./resources/img/techs/javascript.png" data-speed="8" class="layer" id="javascript" alt="javascript">
-        <img src="./resources/img/techs/jquery.png" data-speed="-2" class="layer" id="jquery" alt="jquery">
-        <img src="./resources/img/techs/mongodb.png" data-speed="10" class="layer" id="mongodb" alt="mongodb">
-        <img src="./resources/img/techs/mysql.png" data-speed="-3" class="layer" id="mysql" alt="mysql">
-        <img src="./resources/img/techs/node.png" data-speed="-6" class="layer" id="node" alt="node">
-        <img src="./resources/img/techs/python.png" data-speed="-7" class="layer" id="python" alt="python">
-        <img src="./resources/img/techs/react.png" data-speed="5" class="layer" id="react" alt="react">
-
+      <h2 class="layer">My Skills</h2>
+      <img
+        src="./resources/img/techs/html&css.png"
+        data-speed="-5"
+        class="layer"
+        id="hc"
+        alt="html&css"
+      />
+      <img
+        src="./resources/img/techs/bootstrap.png"
+        data-speed="8"
+        class="layer"
+        id="bootstrap"
+        alt="bootstrap"
+      />
+      <img
+        src="./resources/img/techs/django.png"
+        data-speed="2"
+        class="layer"
+        id="django"
+        alt="django"
+      />
+      <img
+        src="./resources/img/techs/express.png"
+        data-speed="6"
+        class="layer"
+        id="express"
+        alt="express"
+      />
+      <img
+        src="./resources/img/techs/javascript.png"
+        data-speed="8"
+        class="layer"
+        id="javascript"
+        alt="javascript"
+      />
+      <img
+        src="./resources/img/techs/jquery.png"
+        data-speed="-2"
+        class="layer"
+        id="jquery"
+        alt="jquery"
+      />
+      <img
+        src="./resources/img/techs/mongodb.png"
+        data-speed="10"
+        class="layer"
+        id="mongodb"
+        alt="mongodb"
+      />
+      <img
+        src="./resources/img/techs/mysql.png"
+        data-speed="-3"
+        class="layer"
+        id="mysql"
+        alt="mysql"
+      />
+      <img
+        src="./resources/img/techs/node.png"
+        data-speed="-6"
+        class="layer"
+        id="node"
+        alt="node"
+      />
+      <img
+        src="./resources/img/techs/python.png"
+        data-speed="-7"
+        class="layer"
+        id="python"
+        alt="python"
+      />
+      <img
+        src="./resources/img/techs/react.png"
+        data-speed="5"
+        class="layer"
+        id="react"
+        alt="react"
+      />
     </section>
     <!-- Section onTheWay start -->
     <section class="section-onTheWay">
-        <div class="parallax-container">
-            <img src="./resources/img/parallax-bg.jpg" id="bg" alt="stay sky bg">
-            <img src="./resources/img/parallax-moon.png" id="moon" alt="moon">
-            <img src="./resources/img/parallax-mountain.png" id="mountain" alt="mountain">
-            <img src="./resources/img/parallax-road.png" id="road" alt="road">
-            <h2 id="parallax-text">ON THE WAY</h2>
-        </div>
-
+      <div class="parallax-container">
+        <img src="./resources/img/parallax-bg.jpg" id="bg" alt="stay sky bg" />
+        <img src="./resources/img/parallax-moon.png" id="moon" alt="moon" />
+        <img
+          src="./resources/img/parallax-mountain.png"
+          id="mountain"
+          alt="mountain"
+        />
+        <img src="./resources/img/parallax-road.png" id="road" alt="road" />
+        <h2 id="parallax-text">ON THE WAY</h2>
+      </div>
     </section>
 
     <!-- Section Skill start -->
-    <section class="section-skill" id="skills">
-
-    </section>
-
+    <section class="section-skill" id="skills"></section>
 
     <!-- Section Project start -->
     <section class="section-project" id="project">
-        <div class="section-title">
-            <h2 data-bigletter="Projects Details">
-                <strong>My Projects</strong>
-            </h2>
+      <div class="section-title">
+        <h2 data-bigletter="Projects Details">
+          <strong>My Projects</strong>
+        </h2>
 
-            <ul class="project-filter">
-                <li class="list" data-filter="all">All</li>
-                <li class="list" data-filter="React">React</li>
-                <li class="list" data-filter="Full-stack">Full&ndash;Stack</li>
-                <li class="list" data-filter="JavaScript">JavaScript/jQuery</li>
-                <li class="list" data-filter="Django">Django</li>
-            </ul>
+        <ul class="project-filter">
+          <li class="list" data-filter="all">All</li>
+          <li class="list" data-filter="React">React</li>
+          <li class="list" data-filter="Full-stack">Full&ndash;Stack</li>
+          <li class="list" data-filter="JavaScript">JavaScript/jQuery</li>
+          <li class="list" data-filter="Django">Django</li>
+        </ul>
+      </div>
+      <div class="project-container">
+        <div class="itemBox Full-stack JavaScript">
+          <img src="resources/img/projects/explore-bloor.png" alt="work-1" />
+
+          <div class="contentBx">
+            <h4>Explore Bloor</h4>
+            <p>
+              Full&ndash;stack Web Blog for people who fall in love with Bloor
+              Street.
+              <br />
+              Powered by Javascript, Node, Express, MongoDB
+            </p>
+            <div class="button-container">
+              <a
+                href="https://github.com/youquanliu/ExploreBloor"
+                target="_blank"
+              >
+                <span>Github</span>
+                <span>code</span>
+              </a>
+              <a href="https://explore-bloor.herokuapp.com/" target="_blank">
+                <span>Live</span>
+                <span>show</span>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="project-container">
-            <div class="itemBox Full-stack JavaScript">
-
-                <img src="resources/img/projects/explore-bloor.png" alt="work-1">
-
-                <div class="contentBx">
-                    <h4>Explore Bloor</h4>
-                    <p>Full&ndash;stack Web Blog for people who fall in love with Bloor Street.
-                        <br />
-                        Powered by Javascript, Node, Express, MongoDB</p>
-                    <div class="button-container">
-                        <a href="https://github.com/youquanliu/ExploreBloor" target="_blank">
-                            <span>Github</span>
-                            <span>code</span>
-                        </a>
-                        <a href="https://explore-bloor.herokuapp.com/" target="_blank">
-                            <span>Live</span>
-                            <span>show</span>
-                        </a>
-                    </div>
-                </div>
+        <div class="itemBox JavaScript">
+          <img src="resources/img/projects/slot-machine2.png" alt="work-5" />
+          <div class="contentBx">
+            <h4>South Park Slot Machine</h4>
+            <p>
+              Web page slot machine game. Feeling lucky? go and play
+              <br />
+              Powered by HTML, CSS, DOM manipulation
+            </p>
+            <div class="button-container">
+              <a
+                href="https://github.com/youquanliu/Slot-Machine"
+                target="_blank"
+              >
+                <span>Github</span>
+                <span>code</span>
+              </a>
+              <a
+                href="https://youquanliu.github.io/Slot-Machine/"
+                target="_blank"
+              >
+                <span>Live</span>
+                <span>show</span>
+              </a>
             </div>
-            <div class="itemBox JavaScript">
-                <img src="resources/img/projects/slot-machine2.png" alt="work-5">
-                <div class="contentBx">
-                    <h4>South Park Slot Machine</h4>
-                    <p>Web page slot machine game. Feeling lucky? go and play
-                        <br />
-                        Powered by HTML, CSS, DOM manipulation
-                    </p>
-                    <div class="button-container">
-                        <a href="https://github.com/youquanliu/Slot-Machine" target="_blank">
-                            <span>Github</span>
-                            <span>code</span>
-                        </a>
-                        <a href="https://youquanliu.github.io/Slot-Machine/" target="_blank">
-                            <span>Live</span>
-                            <span>show</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="itemBox Full-stack React">
-                <img src="resources/img/projects/toilet-paper-depot.png" alt="toilet-paper-depot">
-                <div class="contentBx">
-                    <h4>Toilet Paper Depot </h4>
-                    <p>Real world toliet paper e-commerce website powered by React, Redux, Express, MongoDB, Paypal
-                    </p>
-                    <div class="button-container">
-                        <a href="https://github.com/youquanliu/E-commerce" target="_blank">
-                            <span>Github</span>
-                            <span>code</span>
-                        </a>
-                        <a href="https://e-commerce-yr0n.onrender.com/" target="_blank">
-                            <span>Live</span>
-                            <span>show</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="itemBox JavaScript">
-                <img src="resources/img/projects/to-do-in-to.png" alt="work-3">
-                <div class="contentBx">
-                    <h4>To Do In To</h4>
-                    <p>Handy single page app for searching Toronto's events on dates Powered by jSON TicketMaster API</p>
-                    <div class="button-container">
-                        <a href="https://github.com/youquanliu/To-do-in-Toronto" target="_blank">
-                            <span>Github</span>
-                            <span>code</span>
-                        </a>
-                        <a href="https://youquanliu.github.io/To-do-in-Toronto/" target="_blank">
-                            <span>Live</span>
-                            <span>show</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="itemBox Full-stack Django">
-                <img src="resources/img/projects/count-me-in.jpg" alt="work-4">
-                <div class="contentBx">
-                    <h4>Count Me In</h4>
-                    <p>Choose certain workouts to your private plans after register. Powered by SQL, Django, Python</p>
-                    <div class="button-container">
-                        <a href="https://github.com/youquanliu/Count_Me_In" target="_blank">
-                            <span>Github</span>
-                            <span>code</span>
-                        </a>
-                        <a href="https://countmein-2020.herokuapp.com/" target="_blank">
-                            <span>Live</span>
-                            <span>show</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="itemBox JavaScript">
-                <img src="resources/img/projects/complete-food.png" alt="work-2">
-                <div class="contentBx">
-                    <h4>Complete Food</h4>
-                    <p>A show-case full-responsive web page Powered by HTML CSS JavaScript</p>
-                    <div class="button-container">
-                        <a href="https://github.com/youquanliu/complete_food-web" target="_blank">
-                            <span>Github</span>
-                            <span>code</span>
-                        </a>
-                        <a href="https://youquanliu.github.io/complete_food-web/" target="_blank">
-                            <span>Live</span>
-                            <span>show</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="itemBox Full-stack React">
-                <img src="resources/img/projects/mastermind.png" alt="work-6">
-                <div class="contentBx">
-                    <h4>Mastermind</h4>
-                    <p>A single page application game
-                        <br />
-                        Powered by React Node Express MongoDB</p>
-                    <div class="button-container">
-                        <a href="https://github.com/youquanliu/react-mastermind" target="_blank">
-                            <span>Github</span>
-                            <span>code</span>
-                        </a>
-                        <a href="https://react-mastermind-7b8bc58e61f3.herokuapp.com" target="_blank">
-                            <span>Live</span>
-                            <span>show</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="itemBox JavaScript">
-                <img src="resources/img/projects/pi-dice-game.png" alt="work-7">
-                <div class="contentBx">
-                    <h4>Pig Dice Game</h4>
-                    <p>A simple page game showcasing vanilla Javascript DOM manipulation</p>
-                    <div class="button-container">
-                        <a href="https://github.com/youquanliu/Pig-dice-game" target="_blank">
-                            <span>Github</span>
-                            <span>code</span>
-                        </a>
-                        <a href="https://youquanliu.github.io/Pig-dice-game" target="_blank">
-                            <span>Live</span>
-                            <span>show</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="itemBox Full-stack React">
+          <img
+            src="resources/img/projects/toilet-paper-depot.png"
+            alt="toilet-paper-depot"
+          />
+          <div class="contentBx">
+            <h4>Toilet Paper Depot</h4>
+            <p>
+              Real world toliet paper e-commerce website powered by React,
+              Redux, Express, MongoDB, Paypal
+            </p>
+            <div class="button-container">
+              <a
+                href="https://github.com/youquanliu/E-commerce"
+                target="_blank"
+              >
+                <span>Github</span>
+                <span>code</span>
+              </a>
+              <a href="https://e-commerce-yr0n.onrender.com/" target="_blank">
+                <span>Live</span>
+                <span>show</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="itemBox JavaScript">
+          <img src="resources/img/projects/to-do-in-to.png" alt="work-3" />
+          <div class="contentBx">
+            <h4>To Do In To</h4>
+            <p>
+              Handy single page app for searching Toronto's events on dates
+              Powered by jSON TicketMaster API
+            </p>
+            <div class="button-container">
+              <a
+                href="https://github.com/youquanliu/To-do-in-Toronto"
+                target="_blank"
+              >
+                <span>Github</span>
+                <span>code</span>
+              </a>
+              <a
+                href="https://youquanliu.github.io/To-do-in-Toronto/"
+                target="_blank"
+              >
+                <span>Live</span>
+                <span>show</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="itemBox Full-stack Django">
+          <img src="resources/img/projects/count-me-in.jpg" alt="work-4" />
+          <div class="contentBx">
+            <h4>Count Me In</h4>
+            <p>
+              Choose certain workouts to your private plans after register.
+              Powered by SQL, Django, Python
+            </p>
+            <div class="button-container">
+              <a
+                href="https://github.com/youquanliu/Count_Me_In"
+                target="_blank"
+              >
+                <span>Github</span>
+                <span>code</span>
+              </a>
+              <a href="https://countmein-2020.herokuapp.com/" target="_blank">
+                <span>Live</span>
+                <span>show</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="itemBox JavaScript">
+          <img src="resources/img/projects/complete-food.png" alt="work-2" />
+          <div class="contentBx">
+            <h4>Complete Food</h4>
+            <p>
+              A show-case full-responsive web page Powered by HTML CSS
+              JavaScript
+            </p>
+            <div class="button-container">
+              <a
+                href="https://github.com/youquanliu/complete_food-web"
+                target="_blank"
+              >
+                <span>Github</span>
+                <span>code</span>
+              </a>
+              <a
+                href="https://youquanliu.github.io/complete_food-web/"
+                target="_blank"
+              >
+                <span>Live</span>
+                <span>show</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="itemBox Full-stack React">
+          <img src="resources/img/projects/mastermind.png" alt="work-6" />
+          <div class="contentBx">
+            <h4>Mastermind</h4>
+            <p>
+              A single page application game
+              <br />
+              Powered by React Node Express MongoDB
+            </p>
+            <div class="button-container">
+              <a
+                href="https://github.com/youquanliu/react-mastermind"
+                target="_blank"
+              >
+                <span>Github</span>
+                <span>code</span>
+              </a>
+              <a
+                href="https://react-mastermind-7b8bc58e61f3.herokuapp.com"
+                target="_blank"
+              >
+                <span>Live</span>
+                <span>show</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="itemBox JavaScript">
+          <img src="resources/img/projects/pi-dice-game.png" alt="work-7" />
+          <div class="contentBx">
+            <h4>Pig Dice Game</h4>
+            <p>
+              A simple page game showcasing vanilla Javascript DOM manipulation
+            </p>
+            <div class="button-container">
+              <a
+                href="https://github.com/youquanliu/Pig-dice-game"
+                target="_blank"
+              >
+                <span>Github</span>
+                <span>code</span>
+              </a>
+              <a
+                href="https://youquanliu.github.io/Pig-dice-game"
+                target="_blank"
+              >
+                <span>Live</span>
+                <span>show</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Section Contact start -->
 
     <section class="section-contact" id="contact">
-        <div class="overlay"></div>
+      <div class="overlay"></div>
 
-        <div class="wrapper">
-                <div class="section-title">
-                    <h2 data-bigletter="Contact Me">
-                        <strong>Contact</strong>
-                    </h2>
-                </div>
-                <form
-                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScuI59bDjomOJ6PpDd55_JOE7ZKbGmoCPeogHeek0Eb-Lf-lQ/formResponse"
-                    method="post" class="contact-form clearfix">
-                    <div class="row">
-                        <div class="col">
-                            <label for="name">Name</label>
-                        </div>
-                        <div class="col">
-                            <input type="text" name="entry.1139434756" id="name" placeholder="Your name" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="col">
-                            <input type="email" name="emailAddress" id="email" placeholder="Your email">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <label for="find-me">How did you find me?</label>
-                        </div>
-                        <div class="col">
-                            <select name="entry.1600493485" id="find-me">
-                                <option value="LinkedIn" selected>LinkedIn</option>
-                                <option value="Friends">Friends</option>
-                                <option value="Indeed">Indeed</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <label for="message">Leave message</label>
-                        </div>
-                        <div class="col">
-                            <textarea name="entry.302393366" id="message" cols="30" rows="10"
-                                placeholder="Your message"></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col space">
-                            <label>&nbsp;</label>
-                        </div>
-                        <div class="col">
-                            <button type="submit">Send it</button>
-                        </div>
-                    </div>
-                </form>
+      <div class="wrapper">
+        <div class="section-title">
+          <h2 data-bigletter="Contact Me">
+            <strong>Contact</strong>
+          </h2>
         </div>
-
-        <footer>
-            <div class="row">
-                <div class="copyright-box">
-                    <p class="copyright">© Copyright <strong>Frank</strong>. All Rights Reserved</p>
-                </div>
+        <form
+          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScuI59bDjomOJ6PpDd55_JOE7ZKbGmoCPeogHeek0Eb-Lf-lQ/formResponse"
+          method="post"
+          class="contact-form clearfix"
+        >
+          <div class="row">
+            <div class="col">
+              <label for="name">Name</label>
             </div>
-        </footer>
+            <div class="col">
+              <input
+                type="text"
+                name="entry.1139434756"
+                id="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="email">Email</label>
+            </div>
+            <div class="col">
+              <input
+                type="email"
+                name="emailAddress"
+                id="email"
+                placeholder="Your email"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="find-me">How did you find me?</label>
+            </div>
+            <div class="col">
+              <select name="entry.1600493485" id="find-me">
+                <option value="LinkedIn" selected>LinkedIn</option>
+                <option value="Friends">Friends</option>
+                <option value="Indeed">Indeed</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="message">Leave message</label>
+            </div>
+            <div class="col">
+              <textarea
+                name="entry.302393366"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Your message"
+              ></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col space">
+              <label>&nbsp;</label>
+            </div>
+            <div class="col">
+              <button type="submit">Send it</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <footer>
+        <div class="row">
+          <div class="copyright-box">
+            <p class="copyright">
+              © Copyright <strong>Frank</strong>. All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </footer>
     </section>
 
     <!--Typer-->
@@ -376,27 +553,28 @@
     <script defer src="./resources/js/menu.js"></script>
     <script defer src="./resources/js/parallax.js"></script>
 
-    <script src='https://code.jquery.com/jquery-3.4.0.min.js'
-        integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
     <!-- vanilla-tilt.js -->
     <script type="text/javascript" src="./vendors/js/vanilla-tilt.js"></script>
     <script type="text/javascript">
-        VanillaTilt.init(document.querySelectorAll(".itemBox"), {
-            max: 25,
-            speed: 400
-        });
+      VanillaTilt.init(document.querySelectorAll(".itemBox"), {
+        max: 25,
+        speed: 400,
+      });
 
-        // find out which element has overflow width automaticly
-        // $.each($('*'), function () {
-        //     if ($(this).width() > $('body').width()) {
-        //         console.log("Wide Element: ", $(this), "Width: ",
-        //             $(this).width());
-        //     }
-        // });
+      // find out which element has overflow width automaticly
+      // $.each($('*'), function () {
+      //     if ($(this).width() > $('body').width()) {
+      //         console.log("Wide Element: ", $(this), "Width: ",
+      //             $(this).width());
+      //     }
+      // });
     </script>
-
-</body>
-
+  </body>
 </html>
